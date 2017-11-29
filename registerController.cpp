@@ -36,3 +36,7 @@ void registerController::processOrder()
   screen.displayFinalReceipt(*cart);
 }
 
+void registerController::update()
+{
+  screen.displayRunningTotal(*cart);
+}
