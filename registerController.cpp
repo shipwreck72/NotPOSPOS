@@ -8,7 +8,6 @@ registerController::registerController(StoreInventory * inventory, order * check
 {
   database = inventory;
   cart = checkout;
-  cart.addObserver(this);
 }
 
 void registerController::processOrder()
@@ -36,3 +35,4 @@ void registerController::processOrder()
   cart->balance(option);
   screen.displayFinalReceipt(*cart);
 }
+
